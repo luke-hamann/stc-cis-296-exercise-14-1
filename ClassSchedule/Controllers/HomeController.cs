@@ -6,10 +6,10 @@ namespace ClassSchedule.Controllers
 {
     public class HomeController : Controller
     {
-        private ClassScheduleUnitOfWork data { get; set; }
-        public HomeController(ClassScheduleContext ctx)
+        private IClassScheduleUnitOfWork data { get; set; }
+        public HomeController(IClassScheduleUnitOfWork rep)
         {
-            data = new ClassScheduleUnitOfWork(ctx);
+            data = rep;
         }
 
         public ViewResult Index(int id)
