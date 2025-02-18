@@ -15,5 +15,11 @@ namespace ClassScheduleTests
             // assert
             Assert.IsType<ViewResult>(result);
         }
+
+        [Fact]
+        public void IndexActionMethod_ModelIsAListOfTeacherObjects()
+        {
+
+        }
     }
 }
