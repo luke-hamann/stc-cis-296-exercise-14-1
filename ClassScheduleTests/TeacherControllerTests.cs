@@ -1,6 +1,6 @@
 namespace ClassScheduleTests
 {
-    public class UnitTest1
+    public class TeacherControllerTests
     {
         [Fact]
         public void Test1()
