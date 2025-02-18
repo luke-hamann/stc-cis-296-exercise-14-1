@@ -25,6 +25,8 @@ namespace ClassSchedule
 
             services.AddDbContext<ClassScheduleContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("ClassScheduleContext")));
+
+            services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
         }
 
         // Use this method to configure the HTTP request pipeline.
