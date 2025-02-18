@@ -3,7 +3,7 @@ namespace ClassScheduleTests
     public class TeacherControllerTests
     {
         [Fact]
-        public void Test1()
+        public void IndexActionMethod_ReturnsAViewResult()
         {
 
         }
