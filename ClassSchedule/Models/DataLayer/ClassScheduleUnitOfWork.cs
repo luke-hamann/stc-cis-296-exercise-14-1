@@ -6,7 +6,7 @@
         public ClassScheduleUnitOfWork(ClassScheduleContext ctx) => context = ctx;
 
         private Repository<Day> dayData;
-        public Repository<Day> Days {
+        public IRepository<Day> Days {
             get {
                 if (dayData == null)
                     dayData = new Repository<Day>(context);
@@ -15,7 +15,7 @@
         }
 
         private Repository<Teacher> teacherData;
-        public Repository<Teacher> Teachers {
+        public IRepository<Teacher> Teachers {
             get {
                 if (teacherData == null)
                     teacherData = new Repository<Teacher>(context);
@@ -24,7 +24,7 @@
         }
 
         private Repository<Class> classData;
-        public Repository<Class> Classes {
+        public IRepository<Class> Classes {
             get {
                 if (classData == null)
                     classData = new Repository<Class>(context);
